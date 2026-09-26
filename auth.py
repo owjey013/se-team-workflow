@@ -1,5 +1,5 @@
 def login(username, password):
-    if username and password:
-        print("Login successful")
-        return True
-    return False
+    if not username or not password:
+        raise ValueError("Username and password required")
+    print("Authenticated")
+    return True
