@@ -1,2 +1,5 @@
 def login(username, password):
-    pass
+    if username and password:
+        print("Login successful")
+        return True
+    return False
